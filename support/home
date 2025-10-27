@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumGames サポートページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NumGames サポート</h1>
+    <p>ログインやスコア記録などでお困りの方へ</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>よくある質問（FAQ）</h2>
+      <ul>
+        <li><a href="#">ログインできない場合の対処法</a></li>
+        <li><a href="#">スコアが保存されない</a></li>
+        <li><a href="#">アカウントを削除したい</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>お問い合わせ</h2>
+      <p>下記のメールアドレスまでご連絡ください。</p>
+      <a href="mailto:support@example.com" class="button">メールで問い合わせる</a>
+    </section>
+
+    <section class="card">
+      <h2>公式リンク</h2>
+      <ul>
+        <li><a href="https://twitter.com/numgames_support" target="_blank">公式X（旧Twitter）</a></li>
+        <li><a href="https://example.com" target="_blank">公式サイト</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 NumGames</p>
+  </footer>
+</body>
+</html>
