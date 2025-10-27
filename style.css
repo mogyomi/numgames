@@ -1,85 +1,65 @@
-/* ====== 基本設定 ====== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f5f8ff;
-  color: #333;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* ====== ヘッダー ====== */
 header {
-  text-align: center;
-  padding: 2.5rem 1rem 1.5rem;
-  background: linear-gradient(135deg, #007aff, #4aa8ff);
-  color: white;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
+    margin: 0;
+    font-size: 2.5em;
 }
 
 header p {
-  font-size: 1rem;
-  opacity: 0.9;
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
 }
 
-/* ====== メイン ====== */
 main {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* ====== カード ====== */
-.card {
-  background: white;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.links ul {
+    list-style: none;
+    padding: 0;
 }
 
-.card h2 {
-  margin-top: 0;
-  color: #007aff;
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
+.links li {
+    margin: 10px 0;
 }
 
-/* ====== リンク ====== */
-a {
-  color: #007aff;
-  text-decoration: none;
-  transition: 0.2s;
+.links a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.links a:hover {
+    text-decoration: underline;
 }
 
-/* ====== ボタン ====== */
-.button {
-  display: inline-block;
-  background: #007aff;
-  color: white;
-  padding: 0.6rem 1.4rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 0.8rem;
-  transition: background 0.2s;
+.about h2 {
+    margin-top: 40px;
+    font-size: 1.5em;
 }
 
-.button:hover {
-  background: #005fc3;
+.about p {
+    line-height: 1.6;
 }
 
-/* ====== フッター ====== */
 footer {
-  text-align: center;
-  font-size: 0.85rem;
-  padding: 1.5rem 0;
-  color: #666;
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #555;
 }
