@@ -55,9 +55,6 @@ main {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 600px;   /* 固定 */
-  max-width: 600px;  /* ← PCでは最大600px */
-  width: 90%;
 }
 
 .card:hover {
