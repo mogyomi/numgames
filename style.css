@@ -119,8 +119,45 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-/* --- ページごとの識別クラス --- */
-body.support-page header { background: #007bff; }
-body.faq-page header { background: #0066cc; }
-body.privacy-page header { background: #004a99; }
-body.terms-page header { background: #003366; }
+/* ========= ページごとの色分け ========= */
+.home-page header { background-color: #2ecc71; }
+.support-page header { background-color: #3498db; }
+.faq-page header { background-color: #9b59b6; }
+.faq-detail-page header { background-color: #e67e22; }
+.privacy-page header { background-color: #16a085; }
+
+/* ========= レスポンシブ対応 ========= */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 1em;
+  }
+
+  ul.link-list li {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
