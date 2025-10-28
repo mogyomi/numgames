@@ -72,6 +72,12 @@ main {
   margin-bottom: 0.8rem;
 }
 
+.root-page .card,
+.support-page .card {
+  width: 600px;
+  max-width: 90%;
+}
+
 /* ====== リンク ====== */
 a {
   color: #007aff;
