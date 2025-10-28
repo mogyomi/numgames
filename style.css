@@ -1,0 +1,126 @@
+/* ===============================
+   共通CSS - NumGames Support
+   Author: Taisei Nozaki
+   Created: 2025
+================================= */
+
+/* --- 基本設定 --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+  padding: 0;
+}
+
+/* --- ヘッダー --- */
+header {
+  background-color: #0056d6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* --- コンテンツ --- */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 3px solid #0056d6;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 25px;
+  border-left: 4px solid #0056d6;
+  padding-left: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* --- リンク --- */
+a {
+  color: #0056d6;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- リスト --- */
+ul {
+  margin: 20px 0 20px 20px;
+  list-style: square;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* --- ボタン --- */
+.button {
+  display: inline-block;
+  background: #0056d6;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #0040a8;
+}
+
+/* --- フッター --- */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+}
+
+/* --- ページごとの識別クラス --- */
+body.support-page header { background: #007bff; }
+body.faq-page header { background: #0066cc; }
+body.privacy-page header { background: #004a99; }
+body.terms-page header { background: #003366; }
