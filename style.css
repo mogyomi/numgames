@@ -3,10 +3,14 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f8ff;
+  background: linear-gradient(180deg, #f5f8ff 0%, #eaf0ff 100%);
   color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* ====== ヘッダー（透明感あり） ====== */
 header {
   position: relative;
   text-align: center;
@@ -33,18 +37,29 @@ header p {
   color: #444;
 }
 
+/* ====== メイン ====== */
 main {
+  flex: 1;
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   padding: 0 1rem;
 }
 
+/* ====== カード ====== */
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1.6rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
@@ -54,6 +69,7 @@ main {
   margin-bottom: 0.8rem;
 }
 
+/* ====== リンク ====== */
 a {
   color: #007aff;
   text-decoration: none;
@@ -64,27 +80,33 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ====== ボタン ====== */
 .button {
   display: inline-block;
-  background: #007aff;
+  background: linear-gradient(135deg, #007aff, #4aa8ff);
   color: white;
   padding: 0.6rem 1.4rem;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
   margin-top: 0.8rem;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.15s;
 }
 
 .button:hover {
-  background: #005fc3;
+  background: linear-gradient(135deg, #0063d1, #3389ff);
+  transform: translateY(-2px);
 }
 
+/* ====== フッター ====== */
 footer {
   text-align: center;
   font-size: 0.85rem;
   padding: 1.5rem 0;
   color: #666;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* ====== レスポンシブ対応 ====== */
@@ -96,6 +118,6 @@ footer {
     padding: 0 0.8rem;
   }
   .card {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 }
